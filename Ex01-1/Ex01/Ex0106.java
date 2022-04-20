@@ -1,24 +1,19 @@
 public class Ex0106{
 	public static void main(String[] args){
-		QueTypeCast1 que = new QueTypeCast1();
-		que.func();
-		que.func1();
+		TypeCast3 cast = new TypeCast3();
+		cast.func();
 	}
 }
 
-class QueTypeCast1{
-	int num1 = 20;
-	int num2 = 10;
-	double num3 = 5;
+class TypeCast3{
 	public void func(){
-		System.out.println(num2/num1);
-		System.out.println(num2+num3);
-		System.out.println(num3/num1);
+		double num1 = 10.5;
+		System.out.println(num1);
+		int num2 = (int)num1;
+		System.out.println(num2);
+		int num3 = 10;
+		String str = "20";
+		System.out.println(Integer.parseInt(str)+30);
+		System.out.println(String.valueOf(num3)+30);
 	}
-	public void func1(){
-		System.out.println(num2 + (" / ") + num1 (" = ") + (num2/num1));
-		System.out.println(num2 + (" + ") + num3 (" = ") + (num2+num3));
-		System.out.println(num3 + (" / ") + num1 (" = ") + (num3/num1));
-	}
-
 }
