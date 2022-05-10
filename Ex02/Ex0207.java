@@ -1,11 +1,11 @@
 public class Ex0207{
-    public static void main(string[] args){
+   	public static void main(String[] args){
         QueBranch7 branch = new QueBranch7();
         branch.func();
     }
 }
 
-public class QueBranch7{
+class QueBranch7{
     public void func(){
     	int num1 = 40;
     	int num2 = 110;
