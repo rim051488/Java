@@ -1,4 +1,4 @@
-public class Ex0207{
+public class Ex0208{
     public static void main(String[] args){
         QueBranch8 myBranch1 = new QueBranch8(20,110);
         QueBranch8 myBranch2 = new QueBranch8(30,100);
@@ -11,7 +11,7 @@ public class Ex0207{
 
 class QueBranch8{
 	int num1,num2;
-	QueBranch8(int in1,in2){
+	QueBranch8(int in1,int in2){
 		num1 = in1;
 		num2 = in2;
 	}
