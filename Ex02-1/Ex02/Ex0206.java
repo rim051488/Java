@@ -1,14 +1,11 @@
 import java.util.Scanner;
 public class Ex0206{
     public static void main(String[] args){
-    	System.out.print("ï¿½ï¿½Yï¿½Nï¿½ï¿½");
-        QueBranch6 myBranch1 = new QueBranch6("ï¿½ï¿½Yï¿½N",180,90);
+        QueBranch6 myBranch1 = new QueBranch6("ˆê˜YŒN",180,90);
         myBranch1.func();
-    	System.out.print("ï¿½Ôqï¿½ï¿½ï¿½ï¿½ï¿½");
-        QueBranch6 myBranch2 = new QueBranch6("ï¿½Ôqï¿½ï¿½ï¿½ï¿½",90,40);
+        QueBranch6 myBranch2 = new QueBranch6("‰Ôq‚³‚ñ",90,40);
         myBranch2.func();
-    	System.out.print("ï¿½Û”ï¿½ï¿½Nï¿½ï¿½");
-        QueBranch6 myBranch3 = new QueBranch6("ï¿½Û”ï¿½ï¿½N",190,160);
+        QueBranch6 myBranch3 = new QueBranch6("ŠÛ”öŒN",190,160);
         myBranch3.func();
     }
 }
@@ -23,12 +20,12 @@ class QueBranch6{
 	}
     public void func(){
     	if (height <= 100){
-            System.out.println(name + "ï¿½ï¿½" +"ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½");
+            System.out.println(name + "‚Í" +"g’·‚ª‘«‚è‚Ü‚¹‚ñ");
         }else{
             if(weight >= 150){
-            System.out.println(name + "ï¿½ï¿½" +"ï¿½dï¿½ÊƒIï¿½[ï¿½oï¿½[ï¿½Å‚ï¿½");
+            System.out.println(name + "‚Í" +"d—ÊƒI[ƒo[‚Å‚·");
             }else{
-            System.out.println(name + "ï¿½ï¿½" +"ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½");
+            System.out.println(name + "‚Í" +"“‹æ‚Å‚«‚Ü‚·");
             }
         }
     }
