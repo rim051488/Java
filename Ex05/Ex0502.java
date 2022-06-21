@@ -1,6 +1,6 @@
-public class Ex0501{
+public class Ex0502{
     public static void main(String[] args){
-    	Player1 player[] = new Player1[6];
+    	Player2 player[] = new Player2[6];
     	String name[] = {"ç≤ì°","óÈñÿ","çÇã¥","ìcíÜ","à…ì°","ìnï”"};
     	int height[] = {1400,150,182,177,165,159};
     	int weight[] = {39,45,96,78,69,560};
@@ -14,7 +14,7 @@ public class Ex0501{
     }
 }
 
-class Player1{
+class Player2{
 	private static double bmiHeavy = 25.1;
 	private static double bmiLight = 18.9;
 	private String name;
@@ -63,5 +63,23 @@ class Player1{
 		if (name.equals("ìcíÜ")){
 			weight -= 5;
 		}
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+	public String getName(){
+		return name;
+	}
+	public void setHeight(int height){
+		this.height = height;
+	}
+	public int getHeight(){
+		return height;
+	}
+	public void setWeight(int weight){
+		this.weight = weight;
+	}
+	public int getWeight(){
+		return weight;
 	}
 }
