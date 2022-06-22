@@ -5,7 +5,13 @@ public class Ex0502{
     	int height[] = {1400,150,182,177,165,159};
     	int weight[] = {39,45,96,78,69,560};
     	for (int i = 0; i < player.length;i++){
-    		player[i] = new Player1(name[i],height[i],weight[i]);
+    		player[i] = new Player2(name[i],height[i],weight[i]);
+    		if (player[i].getName().equals("ˆÉ“¡")){
+    			player[i].setHeight(player[i].getHeight()+6);
+    		}
+    		if (player[i].getName().equals("‚‹´")){
+    			player[i].setWeight(player[i].getWeight()-10);
+    		}
     		player[i].calcBmi();
     		player[i].print();
     	}
@@ -21,20 +27,10 @@ class Player2{
 	private int height = 171;
 	private int weight = 62;
 	private static double bmi = 0;
-	Player1(String name, int height,int weight){
-		this.name = name;
-		if (0<height){
-			if (height<272)
-			{
-				this.height = height;
-			}
-		}
-		if (0<weight){
-			if (weight<550)
-			{
-			this.weight = weight;
-			}
-		}
+	Player2(String name, int height,int weight){
+		setName(name);
+		setHeight(height);
+		setWeight(weight);
 		secretBoots();
 		secretBalloon();
 	}
@@ -71,13 +67,17 @@ class Player2{
 		return name;
 	}
 	public void setHeight(int height){
-		this.height = height;
+		if (0<height && height<272){
+			this.height = height;
+		}
 	}
 	public int getHeight(){
 		return height;
 	}
 	public void setWeight(int weight){
-		this.weight = weight;
+		if (0<weight && weight < 550){
+			this.weight = weight;
+		}
 	}
 	public int getWeight(){
 		return weight;
