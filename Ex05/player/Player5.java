@@ -1,36 +1,5 @@
-public class Ex0503{
-    public static void main(String[] args){
-    	Player3 player[] = new Player3[6];
-    	String name[] = {"ç≤ì°","óÈñÿ","çÇã¥","ìcíÜ","à…ì°","ìnï”"};
-    	int height[] = {1400,150,182,177,165,159};
-    	int weight[] = {39,45,96,78,69,560};
-    	for (int i = 0; i < player.length;i++){
-    		switch(name[i]){
-    		case "ç≤ì°":
-    			player[i] = new Player3();
-    			break;
-    		case "ìnï”":
-    			player[i] = new Player3(name[i]);
-    			break;
-    		case "çÇã¥":
-    			player[i] = new Player3(name[i],height[i],weight[i]-15);
-    			break;
-    		case "à…ì°":
-    			player[i] = new Player3(name[i],height[i]+6,weight[i]);
-    			break;
-    		default:
-    			player[i] = new Player3(name[i],height[i],weight[i]);
-    			break;
-    		}
-    		player[i].calcBmi();
-    		player[i].print();
-    	}
-        Profile.Number();
-    	Profile.Name();
-    }
-}
-
-class Player3{
+package player;
+public class Player5{
 	private static double bmiHeavy = 25.1;
 	private static double bmiLight = 18.9;
 	private static final String defName = "ç≤ì°";
@@ -40,13 +9,13 @@ class Player3{
 	private int height = defHeight;
 	private int weight = defWeight;
 	private static double bmi = 0;
-	Player3(){
+	public Player5(){
 		this(defName,defHeight,defWeight);
 	}
-	Player3(String name){
+	public Player5(String name){
 		this(name,defHeight,defWeight);
 	}
-	Player3(String name, int height,int weight){
+	public Player5(String name, int height,int weight){
 		setName(name);
 		setHeight(height);
 		setWeight(weight);
