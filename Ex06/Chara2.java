@@ -1,19 +1,19 @@
-public class Chara1 extends Chara0{
+public class Chara2 extends Chara0{
 	@Override
 	public String getName(){
-		String str = "ç§ã®åå‰ã¯"+super.getName() +"ã§ã™ã€‚" ;
+		String str = "„‚Ì–¼‘O‚Í"+super.getName() +"‚Å‚·B" ;
 		return str;
 	}
 	public String getAge(){
-		String str = "ç§ã®å¹´é½¢ã¯"+super.getAge() +"æ­³ã§ã™" ;
+		String str = "„‚Ì”N—î‚Í"+super.getAge() +"Î‚Å‚·" ;
 		return str;
 	}
 	public String getRace(){
-		String str ="ç§ã®ç¨®æ—ã¯"+super.getRace() +"ã§ã™ã€‚" ;
+		String str ="„‚Ìí‘°‚Í"+super.getRace() +"‚Å‚·B" ;
 		return str;
 	}
 	public String getJob(){
-		String str = "ç§ã®è·æ¥­ã¯"+super.getJob() +"ã§ã™ã€‚" ;
+		String str = "„‚ÌE‹Æ‚Í"+super.getJob() +"‚Å‚·B" ;
 		return str;
 	}
 }
