@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class MyBuddy extends AbstractBuddy{
 	MyBuddy(){
 		int number = (int)(Math.random()*DefBuddyCnt);
@@ -63,6 +64,22 @@ public class MyBuddy extends AbstractBuddy{
 		int damage = (int)(Math.random() * 50+50);
 		System.out.println("真・溜め斬り！");
 		return damage;
+	}
+	public String question(){
+		System.out.print("もう一度挑戦しますか？(Y/N)");
+		System.out.print("YかN以外を押すとNとなります");
+        Scanner r = new Scanner (System.in);
+        String red = r.nextLine();
+        switch(red){
+            case ("y"):
+            case ("Y"):
+            return "1";
+            case ("n"):
+            case ("N"):
+            return "2";
+            default:
+        	return "3";
+        }
 	}
 	@Override
 	public String getGreeting(){

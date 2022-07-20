@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ex0603{
 	public static void main(String[] args){
 		MyBuddy buddy = new MyBuddy();
-		int enemyHP = 100;
+		int enemyHP = 150;
 		int playerHP = 100;
 		int finishtrun = 0;
 		System.out.println(buddy.getGreeting());
@@ -11,6 +11,7 @@ public class Ex0603{
 		String name = scanner.nextLine();
 		System.out.println(name+"‚Å‚·B‚æ‚ë‚µ‚­");
 		System.out.println(buddy.getTraining(name));
+		System.out.println();
 		while (enemyHP > 0 && playerHP > 0){
 			System.out.println(name + "‚ÌUŒ‚"+(++finishtrun)+"‰ñ–Ú");
 			if ((int)(Math.random() * 5) ==0) {
@@ -33,6 +34,12 @@ public class Ex0603{
 			if (playerHP <= 0){
 				System.out.println(buddy.getFailure());
 				System.out.println("‚í‚©‚è‚Ü‚µ‚½\n‚Ü‚½—Í‚ğ‚Â‚¯‚Ä’§í‚µ‚Ü‚·");
+				System.out.println();
+				if (buddy.question() == "1"){
+					enemyHP = 120;
+					playerHP = 100;
+					finishtrun = 0;
+				}
 			}else if(enemyHP <= 0){
 				System.out.println(buddy.getSuccess());
 				System.out.println("‚Í‚¢A–‚‰¤‚ğ“|‚µ‚Ä‚«‚Ü‚·");
