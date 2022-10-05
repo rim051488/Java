@@ -21,5 +21,6 @@ class TaxCalc{
 		price = (int)(cost*1.1);
 		System.out.println("Å‚İ‚Ì‰¿Ši"+price+"‰~");
 		System.out.println("’F¬”‘æˆêˆÊ‚Ì’[”‚ÍØ‚èÌ‚Ä‚Å‚·");
+		
 	}
 }
