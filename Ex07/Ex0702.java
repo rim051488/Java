@@ -2,20 +2,21 @@ public class Ex0702{
 	public static void main(String[] args){
 		ExRobot1 robot = new ExRobot1();
 		robot.speak();
+		System.out.println(robot.NAME);
 		robot.walk();
 		robot.jump();
 		robot.punch();
 		robot.kick();
+		Profile.Number();
+		Profile.Name();
 	}
 }
 
 class ExRobot1 implements IFSpeak,IFWalk,IFJump,IFPunch,IFKick{
-	private String name = "N";
-	
 	@Override
 	public void speak(){
-		System.out.println("わたしは"+this.name+"です！");
-	}
+		System.out.println("わたしは"+this.NAME+"です！");
+	}	
 	@Override
 	public void walk(){
 		System.out.println("わたしは歩いております。");
@@ -35,11 +36,14 @@ class ExRobot1 implements IFSpeak,IFWalk,IFJump,IFPunch,IFKick{
 }
 
 interface IFWalk{
-	void walk();
+	 void walk();
 }
 
 interface IFSpeak{
-	void speak();
+	public String NAME = "レッド";
+	default public void speak(){
+		System.out.println("わっしは"+this.NAME+"です！");
+	}
 }
 
 interface IFJump{

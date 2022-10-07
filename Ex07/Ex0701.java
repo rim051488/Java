@@ -3,6 +3,8 @@ public class Ex0701{
 		Robot1 robot = new Robot1();
 		robot.speak();
 		robot.walk();
+		Profile.Number();
+		Profile.Name();
 	}
 }
 

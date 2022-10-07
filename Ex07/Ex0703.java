@@ -4,6 +4,8 @@ public class Ex0703{
 		robotA.speak();
 		Robot1 robotB = (Robot1)robotA;
 		robotB.speak();
+		Profile.Number();
+		Profile.Name();
 	}
 }
 
@@ -12,11 +14,11 @@ class Robot1 implements IFSpeak,IFWalk{
 	
 	@Override
 	public void speak(){
-		System.out.println("わたしは"+this.name+"です！");
+		System.out.println("ワタシは"+this.name+"です！");
 	}
 	@Override
 	public void walk(){
-		System.out.println("歩きます");
+		System.out.println("わたしは歩いております。");
 	}
 }
 
